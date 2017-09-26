@@ -4,3 +4,7 @@ function basicCard(front, back){
     this.back = back;
 }
 //
+
+
+
+module.exports = BasicCard;
