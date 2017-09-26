@@ -1,0 +1,25 @@
+{
+  "name": "flash-cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BasicCard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcoe10/flash-card-it.git"
+  },
+  "keywords": [
+    "card",
+    "cards",
+    "flash",
+    "card"
+  ],
+  "author": "Jacob Coe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcoe10/flash-card-it/issues"
+  },
+  "homepage": "https://github.com/jcoe10/flash-card-it#readme"
+}
