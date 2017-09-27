@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/jcoe10/flash-card-it/issues"
   },
-  "homepage": "https://github.com/jcoe10/flash-card-it#readme"
+  "homepage": "https://github.com/jcoe10/flash-card-it#readme",
+  "dependencies": {
+    "inquirer": "^3.3.0"
+  }
 }
