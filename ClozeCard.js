@@ -22,38 +22,38 @@ console.log(q1.fullText);
 var brokenCloze = new clozeCard("Error", "Invalid Entry");
 
 
-//Question 2
-var q2 = new clozeCard("There were thirteen colonies the United States.", "thirteen");
+// //Question 2
+// var q2 = new clozeCard("There were thirteen colonies the United States.", "thirteen");
 
-// "George Washington"
-console.log(q2.cloze); 
+// // "George Washington"
+// console.log(q2.cloze); 
 
-// There were ... colonies the United States.".
-console.log(q2.partial);
+// // There were ... colonies the United States.".
+// console.log(q2.partial);
 
-// "There were thirteen colonies the United States."
-console.log(q2.fullText);
+// // "There were thirteen colonies the United States."
+// console.log(q2.fullText);
 
-// Should throw or log an error 
-var brokenCloze = new clozeCard("Error", "Invalid Entry");
-
-
+// // Should throw or log an error 
+// var brokenCloze = new clozeCard("Error", "Invalid Entry");
 
 
-//Question 3
-var q3 = new clozeCard("America was founded on July 4, 1176.", "July 4, 1776");
 
-// "July 4, 1776"
-console.log(q3.cloze); 
 
-// "America was founded on ... ."
-consoles.log(q3.partial);
+// //Question 3
+// var q3 = new clozeCard("America was founded on July 4, 1176.", "July 4, 1776");
 
-// "America was founded on July 4, 1176."
-console.log(q3.fullText);
+// // "July 4, 1776"
+// console.log(q3.cloze); 
 
-// Should throw or log an error
-var brokenCloze = new clozeCard("Error", "Invalid Entry");
+// // "America was founded on ... ."
+// consoles.log(q3.partial);
+
+// // "America was founded on July 4, 1176."
+// console.log(q3.fullText);
+
+// // Should throw or log an error
+// var brokenCloze = new clozeCard("Error", "Invalid Entry");
 
 
 
@@ -72,8 +72,6 @@ var brokenCloze = new clozeCard("Error", "Invalid Entry");
 
 // // Should throw or log an error 
 // var brokenCloze = new clozeCard("Error", "Invalid Entry");
-
-
 
 
 
