@@ -6,51 +6,35 @@ function basicCard(front, back) {
     this.back = back;
 }
 
-var userInput = "";
+
+var q1 = new basicCard("Who was the first president of the United States?", "George Washington");
+
+
+var q2 = new basicCard('How many colonies was the United States originally?', 'thirteen');
+
+
+var q3 = new basicCard("When was America Founded?", 'July 4, 1776');
+
+
+var q4 = new basicCard("Which country did America buy the Louisiana Purchase from?", 'France');
+
+
+var q5 = new basicCard("Then deadliest war in American history is?", 'The Civil War');
+
 
 //Question 1
-var questions = require("./questions.json");
-if(questions[0].back == userInput){
-    console.log(questions[0].message)
-}else{
-    console.log("Wrong!")
-}
-
-
-//Function that asks the Questions
-function askQuestion(){
-    //Loop over the array of questions in the other file
-    for (var i = 0; i < questions.length; i++) {
-        var front = questions.front[i];
-        var back = questions.back[i];
-        //Make a new question
-        var q = new basicCard(front, back);
-        //Keep track of the count
-        var questionCount = questions[i];
-        questionsCount++;
-        //Ask the user the question
-        if (questionsCount > 0) {
-            console.log
-            
-        } else {
-          console.log("Hey, there are no more Questions");  
-        }
+inquirer.prompt([
+{
+    message: q1.front,
+    name: "president"  
+}])
+.then (function(result){
+    if(result.president == q1.back){
+        console.log('Correct!')
+    }else{ 
+    console.log('Wrong!!!')
     }
-    
-
-// inquirer.prompt([
-// {
-//     message: q1.front,
-//     name: "president"  
-// }])
-// .then (function(result){
-//     if(result.president == q1.back){
-//         console.log('Correct!')
-//     }else{ 
-//     console.log('Wrong!!!')
-//     }
-//     askQuestion();
-// })
+})
 
 
 // //Question 2
@@ -76,7 +60,7 @@ function askQuestion(){
 // }])
 // .then (function(result){
 //     if(result.found == q3.back){
-//         console.log("Right again!");
+//         console.log('Right again!');
 //     }else{
 //         console.log('Wrong!!!')  
 //     }
@@ -112,5 +96,5 @@ function askQuestion(){
 //     }
 
 // })
-}
+
 module.exports = basicCard;
