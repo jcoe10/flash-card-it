@@ -1,49 +1,49 @@
-// var inquirer = require('inquirer');
+var inquirer = require('inquirer');
 //Question 1
-// var card = require("./BasicCard.js");
-// var questions = require("./questions.json");
+var card = require("./BasicCard.js");
+var questions = require("./questions.json");
 
-// //Function that asks the Questions
-// function askQuestion(){
-//     var d = 0;
-// if(d == 5){
-//     console.log("game is over");
-// }else{
+//Function that asks the Questions
+function askQuestion(){
+    var d = 0;
+if(d == 5){
+    console.log("game is over");
+}else{
  
 
-//     inquirer.prompt([{
+    inquirer.prompt([{
         
-//                 message: questions[d].front,
-//                 name: "question"
+                message: questions[d].front,
+                name: "question"
         
-//             }]).then(function(response){
+            }]).then(function(response){
 
-//                 if(questions[d].back == response.question){
-//                     console.log("correct");
-//                     d++
-//                     askQuestion();
-//                 }else{
-//                     console.log("wrong");
-//                 }
-//             })
-// }
+                if(questions[d].back == response.question){
+                    console.log("correct");
+                    d++
+                    askQuestion();
+                }else{
+                    console.log("wrong");
+                }
+            })
+}
    
-//     //Loop over the array of questions in the other file
-//     for (var i = 0; i < questions.length; i++) {
-//         var front = questions.front[i];
-//         var back = questions.back[i];
-//         //Make a new question
-//         var q = new basicCard(front, back);
-//         //Keep track of the count        
-//         var questionCount = 0;
-//         questionsCount++;
-//         //Ask the user the question
-//         if (questionsCount > 5) {
-//             console.log("Hey, there are no more Questions");
-//         } else {
-//             console.log(questions[i]);
-//         }
-//     }
+    //Loop over the array of questions in the other file
+    for (var i = 0; i < questions.length; i++) {
+        var front = questions.front[i];
+        var back = questions.back[i];
+        //Make a new question
+        var q = new basicCard(front, back);
+        //Keep track of the count        
+        var questionCount = 0;
+        questionsCount++;
+        //Ask the user the question
+        if (questionsCount > 5) {
+            console.log("Hey, there are no more Questions");
+        } else {
+            console.log(questions[i]);
+        }
+    }
     
 
 // inquirer.prompt([// {
@@ -118,4 +118,4 @@
 //     }
 
 // })
-//}
+}
